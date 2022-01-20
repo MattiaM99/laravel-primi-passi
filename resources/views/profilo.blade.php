@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="container">
+  <div class="container">
     <ul class="nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">LOGO</a>
@@ -24,25 +24,11 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ route('impostazioni') }}">Impostazioni</a>
         </li>
-      </ul>
-</div>
+    </ul>
+  </div>
 
     <div class="container">
-        <h1>HOME</h1>
-        <h2>Ciao {{ $name }}</h2>
-        <ul>
-          Oggi devi:
-            @foreach ($todos as $todo )
-                <li>
-          
-                    @if ($loop->last)
- 
-                    @endif
-                    {{ $todo }}
-                </li>
-            @endforeach
-
-        </ul>
+        <h1>Mattia</h1>
     </div>
 
 

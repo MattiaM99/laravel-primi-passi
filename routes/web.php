@@ -14,5 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+
+    $data = [
+        'name' => 'Mattia',
+        'todos' => [
+            "fare spesa",
+            "andare in palestra",
+            "Portare fuori i cani",
+            "studiare laravel"
+        ]
+    ];
+    return view('home', $data);
+})->name('home');
+
+Route::get('/profilo', function () {
+    return view('profilo');
+})->name('profilo');
+
+Route::get('/impostazioni', function () {
+    return view('impostazioni');
+})->name('impostazioni');
